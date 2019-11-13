@@ -1,0 +1,26 @@
+
+h2 {
+    font-size: 2rem;
+}
+
+.score-board {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.score-group, .task-names {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.score, .task-name {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    height: 2rem;
+}
+
+.invis {
+    color: transparent;
+}
