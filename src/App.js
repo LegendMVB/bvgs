@@ -8,7 +8,7 @@ var MQTT_PORT = 8081
 var MQTT_TOPIC = "bvgs"
 
 
-var client = new Paho.Client(MQTT_HOST, MQTT_PORT, "clientId");
+var client = new Paho.Client(MQTT_HOST, MQTT_PORT, "clientId-HAnX4r3fW7");
 
 
 client.connect({
