@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import './App.css';
 import {ScoreBoard} from "../components/score-board/score-board";
 
-
 class App extends Component {
   constructor(props) {
     super(props);

@@ -7,7 +7,7 @@ const MQTT_PORT = 8081;
 const MQTT_TOPIC = "bvgs";
 
 export const ScoreBoard = () => {
-  const [client, _] = useState(new Paho.Client(MQTT_HOST, MQTT_PORT, "clientId-NgVdzIXITm"));
+  const [client, _] = useState(new Paho.Client(MQTT_HOST, MQTT_PORT, "clientId-1FG2i7jIhb"));
 
 
   const [scores, scoreReducer] = useReducer((state, payload) => {
@@ -41,7 +41,7 @@ export const ScoreBoard = () => {
         client.subscribe(MQTT_TOPIC);
       }
     });
-    client.onMessageArrived = (message) => handleMessage(JSON.parse(message));
+    client.onMessageArrived = (message) => handleMessage(JSON.parse(message.payloadString));
   }, []);
 
 
